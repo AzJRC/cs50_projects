@@ -1,0 +1,18 @@
+@use '../custom' as *;
+
+//GRADIENT
+@mixin gradient-primary {
+    background: linear-gradient(to right, rgba($primary, 0.5), rgba($secondary, 0.5));
+}
+
+
+//HEADINGS
+@mixin heading-1 {
+    font-size: 3rem;
+    font-weight: 800;
+}   
+
+@mixin heading-2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}

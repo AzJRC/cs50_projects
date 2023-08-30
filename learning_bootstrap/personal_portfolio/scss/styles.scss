@@ -1,0 +1,15 @@
+//Custom bootstrap
+@use 'custom';
+
+//components
+@use './components/animations';
+@use './components/buttons';
+@use './components/mixins';
+@use './components/typography';
+
+//pages
+@use './pages/aboutpage';
+@use './pages/contactpage';
+@use './pages/homepage';
+@use './pages/workpage';
+

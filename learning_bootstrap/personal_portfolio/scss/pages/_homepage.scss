@@ -1,0 +1,41 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+body {
+    height: 100%;
+    margin: 0;
+    @include gradient-primary;
+}
+
+#greeting {
+    height: 60vh;
+
+    .my-name {
+        @include heading-1;
+    }
+    
+    .about {
+        @include heading-2;
+    }
+}
+
+
+#navigation-menu {
+    height: 40vh;
+
+    nav.nav-pills {
+        max-width: 700px;
+        margin: auto;
+
+        .nav-link {
+            width: 150px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .nav-link:hover {
+            background-color: $secondary;
+        }
+    }
+}
